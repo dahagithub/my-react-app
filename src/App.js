@@ -3,12 +3,22 @@ import './App.css';
 import Clock from './Clock';
 import Toggle from './Toggle';
 import LoginControl from './LoginControl'
+import NameForm from './NameForm'
+import FlavorForm from './FlavorForm'
+import Reservation from './Reservation'
 // import {*} from './Clock';
-import {Welcome, Greeting} from "./FunctionComponents";
+import {Welcome, Greeting, NumberList, Blog} from "./FunctionComponents";
 
 // function Welcome(props) {
 //   return <h1>Hello, {props.name}</h1>;
 // }
+
+const numbers = [1, 2, 3, 4, 5];
+
+const posts = [
+  {id: 1, title: 'Hello World', content: 'Welcome to learning React!'},
+  {id: 2, title: 'Installation', content: 'You can install React from npm.'}
+];
 
 function App() {
   return (
@@ -44,6 +54,21 @@ function App() {
       </div>
       <div>
       <LoginControl />
+      </div>
+      <div>
+      <NameForm />
+      </div>
+      <div>
+      <FlavorForm />
+      </div>
+      <div>
+      <Reservation />
+      </div>
+      <div>
+      <NumberList numbers={numbers} />
+      </div>
+      <div>
+      <Blog posts={posts} />
       </div>
     </div>
   );
