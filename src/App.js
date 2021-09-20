@@ -1,13 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import './App.css';
 import Clock from './Clock';
 import Toggle from './Toggle';
-import LoginControl from './LoginControl'
-import NameForm from './NameForm'
-import FlavorForm from './FlavorForm'
-import Reservation from './Reservation'
+import LoginControl from './LoginControl';
+import NameForm from './NameForm';
+import FlavorForm from './FlavorForm';
+import Reservation from './Reservation';
 // import {*} from './Clock';
 import {Welcome, Greeting, NumberList, Blog} from "./FunctionComponents";
+import Game from "./Game";
 
 // function Welcome(props) {
 //   return <h1>Hello, {props.name}</h1>;
@@ -37,6 +38,9 @@ function App() {
           Learn React
         </a>
       </header> */}
+      <div>
+        <Game />
+      </div>
       <div id="Clock">
         <script src="./Clock.js">
           test();
